@@ -8,19 +8,17 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div>
-      <div id="header">
-        <p>{{name}}</p>
-        <div id="menu">
-          <ul>
-            <li>CV</li>
-            <li>GitHub</li>
-            <li>Contact</li>
-          </ul>
-        </div>
+    <main>
+      <div class="sidebar" id="header">
+        <p class="name" id="name">{{name}}</p>
+        <nav id="menu">
+          <li> <a href="mohammedFawzyFront-endVue.pdf">CV </a></li>
+          <li> <a href="https://github.com/mohammed-fawzy">GitHub</a></li>
+          <li> <a href="#" id="contact">Contact</a></li>
+        </nav>
       </div>
-      <div id="content">
-        <p>{{date}}</p>
+      <article id="content">
+        <p class="text-center date" id="date">{{date}}</p>
         <div>
           <p>
             I had seen little of Holmes lately. My marriage had drifted us away
@@ -70,14 +68,23 @@
             fashion.
           </p>
         </div>
-        <div id="footer">
-          <div>
-            <p>
-              Passage adapted from Arthur Conan Doyle's "A Scandal in Bohemia"
-              (1891)
-            </p>
-          </div>
-        </div>
+      </article>
+      <footer id="footer">
+        <p class="text-center">
+          Passage adapted from Arthur Conan Doyle's "A Scandal in Bohemia"
+          (1891)
+        </p>
+      </footer>
+    </main>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p><span class="bold-text">Phone: </span>+201069066992 </p>
+        <p><span class="bold-text">Email: </span>m.fawzy.le@gmail.com</p>
+        <p><span class="bold-text">Location: </span> Egypt - Mansoura</p>   
+        </p>
       </div>
     </div>
     <script src="script.js"></script>
